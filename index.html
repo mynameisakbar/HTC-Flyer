@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTC Flyer</title>
+    <!-- Sencha Library -->
+    <link rel="stylesheet" href="lib/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="lib/sencha-touch.js"></script>
+    
+    <!-- TimeTracker Library -->
+    <script type="text/javascript" src="lib/time-tracker.js"></script>
+    
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="lib/jquery-1.5.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/start.js"></script>
+    <script type="text/javascript" src="js/youTube/youTubeLoader.js"></script>
+    <script type="text/javascript" src="js/deviceDetection/detect.js"></script>
+    <script type="text/javascript" src="js/drawer/drawingClickEvent.js"></script>
+    <script type="text/javascript" src="js/drawer/drawing.js"></script>
+    <script type="text/javascript" src="js/layout/mainClickEvent.js"></script>
+    <script type="text/javascript" src="js/layout/multiCarousel.js"></script>
+    <script type="text/javascript" src="js/tracking/eventTracking.js"></script>
+    <script type="text/javascript" src="js/html5Video/video.js"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+ 	_gaq.push(['_setAccount', 'UA-22826910-3']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
+  </head> 
+  
+  <body onload="onload()">
+  	
+  	<!-- ======= Drawer ======= -->
+  	
+  	<!-- Background -->
+  	<div id="topFrame" class="topFrame"></div>
+  	<div id="leftFrame" class="leftFrame"></div>
+  	<div id="rightFrame" class="rightFrame"></div>
+  	<div id="bottomFrame" class="bottomFrame"></div>
+  	<!-- Pallet -->
+  	<div id="brushes" class="brushes"></div>
+  	<!-- whiteColor -->
+  	<div id="whiteColor" class="whiteColor">
+  		<a href="#"></a>
+  	</div>
+  	<!-- redColor -->
+  	<div id="redColor" class="redColor">
+  		<a href="#"></a>
+  	</div>
+  	<!-- blueColor -->
+  	<div id="blueColor" class="blueColor">
+  		<a href="#"></a>
+  	</div>
+  	<!-- blackColor -->
+  	<div id="blackColor" class="blackColor">
+  		<a href="#"></a>
+  	</div>
+  	<!-- Close -->
+  	<div id="close" class="close">
+  		<a href="#"></a>
+  	</div>
+  	<!-- Clear -->
+  	<div id="clear" class="clear">
+  		<a href="#"></a>
+  	</div>
+  	<!-- Draw -->
+  	<div id="draw" class="draw">
+  		<a href="#"></a>
+  	</div>
+    <!-- Drawing Canvas	 -->
+	<div id="container"> 
+      <canvas id="sketchpad" width="766" height="940"> 
+        Sorry, your browser is not supported.
+      </canvas>		
+	</div>
+	
+	<!-- ======= Top Screen ======= -->
+	<div class="displayNone">
+	<div id="content">
+		<!-- HTC-Logo -->
+		<div class="logo"></div>
+		<!-- HTC-Sense Logo -->
+		<div class="senseLogo"></div>
+		<!-- Hand -->
+		<div id="hand" class="hand"></div>
+		<!-- Icons -->
+    	<div id="videoIcon" class="videoIcon">
+    		<a href="#"></a>
+    	</div>
+    	<div id="scribeIcon" class="scribeIcon">
+    		<a href="#"></a>
+    	</div>
+    	<div id="noteTakingIcon" class="noteTakingIcon">
+    		<a href="#"></a>
+    	</div>
+    	<div id="streamlinedIcon" class="streamlinedIcon">
+    		<a href="#"></a>
+    	</div>
+		<!-- CloserLook YouTube Video -->
+		<div id="player" class="player"></div>
+		<!-- ScribeTech -->
+		<div id="scribeTech" class="scribeTech"></div>
+		<!-- NoteTaking -->
+		<div id="noteTaking" class="noteTaking"></div>
+		<!-- StreamLined -->
+		<div id="streamLined" class="streamLined"></div>
+		<!-- CloserLookDescription -->
+		<div id="closerLookDescription" class="description">
+			<div class="title">A tablet like no other</div>
+			<p>HTC Flyer is a portable 7-inch tablet with a magic pen that can do more for you than you can imagine. From creating masterpieces with a stroke of a paintbrush, to taking multimedia notes or even signing digital documents, HTC Flyer puts you in control of any situation. With streaming movies at a touch of your finger, HTC Flyer turns any moment into something special.</p>
+    	</div>
+    	<!-- ScribeDescription -->
+        <div id="scribeDescription" class="description" style="opacity: 0">
+        	<div class="title">HTC Scribe Technology</div>
+        	<p>HTC Flyer is the first tablet delivering a new HTC innovation that features natural pen interaction. It can draw, paint, write, sign documents, and even retouch pictures. It can be a highlighter for the reader (and by the way all your highlights will be collated when you're done). The HTC Flyer can even add voiceover to a storybook you're drawing up at home. Work or play, it's magic.</p>
+        </div>
+        <!-- NoteTakingDescription -->
+        <div id="noteTakingDescription" class="description" style="opacity: 0">
+        	<div class="title">Supreme Note Taking</div>
+        	<p>HTC Flyer makes sure you capture everything with HTC Notes. You can add scribbles, photos and sound to your detailed notes. Link your notes to events in your calendar and your calendar transforms into a multimedia archive of your past meetings or events. And with Timemark, you can tap on any moment from your meeting and hear the audio you recorded, so you never have to struggle with deciphering the notes you took.</p>
+        </div>
+        <!-- StreamLinedDescription -->
+        <div id="streamLinedDescription" class="description" style="opacity: 0">
+        	<div class="title">Streamlined unibody construction</div>
+        	<p>The premium unibody construction looks great and feels solid in your hand, while still keeping the weight to less than the average paperback book. The 7-inch display is great for surfing the web or watching movies. HTC Flyer is the big screen that's small enough, and more than stylish enough, to take anywhere your life takes you.</p>
+        </div>
+        <!-- HTC Sense -->
+        <div class="htcSense">
+        	<div class="title">A tablet with HTC Sense</div>
+        	<hr/>
+        </div>
+        <!-- Click to Play -->
+		<div class="clickToPlay"></div>
+	</div>
+	</div>
+	<!-- ======= Bottom Screen ======= -->
+	<div class="displayNone">
+	<!-- Page 1 -->
+    <div class="entry">
+    	<div class="htcSenseVideo">
+    		<video id="hollywood" src="video/hollywood.mp4" controls="controls"  class="senseVideo" onclick="this.play();">
+    			your browser does not support the video tag
+    		</video>
+    	</div>
+    	<div class="htcSenseDescription">
+    		<div class="title">Hollywood on demand</div>
+    			<p>Enjoy a full library of Hollywood blockbusters at your fingertips with HTC Watch. Just make your selection and start watching the show seconds into the download.</p>
+    	</div>
+    </div>
+    <!-- Page 2 -->
+    <div class="entry">
+    	<div class="htcSenseVideo">
+    		<video id="immersive" src="video/immersive.mp4" controls="controls" class="senseVideo" onclick="this.play();">
+    			your browser does not support the video tag
+    		</video>
+    	</div>
+    	<div class="htcSenseDescription">
+    		<div class="title">Immersive experience</div>
+    			<p>Have you ever held a thunderstorm in your hand? When checking the weather – feel the sun's rays or wipe away the droplets of water.</p>
+    	</div>
+    </div>
+    <!-- Page 3 -->
+    <div class="entry">
+    	<div class="htcSenseVideo">
+    		<video id="richerInternet" src="video/richerInternet.mp4" controls="controls" class="senseVideo" onclick="this.play();">
+    			your browser does not support the video tag
+    		</video>
+    	</div>
+    	<div class="htcSenseDescription">
+    		<div class="title">Richer Internet experience</div>
+    			<p>Surf the web in style with multi-window browsing and a quick lookup tool that quickly takes you to Wikipedia, YouTube or the dictionary when something strikes your curiosity.</p>
+    	</div>
+    </div>
+    <!-- Page 4 -->
+    <div class="entry">
+    	<div class="htcSenseVideo">
+    		<video id="lifeMoments" src="video/lifeMoments.mp4" controls="controls" class="senseVideo">
+    			your browser does not support the video tag
+    		</video>
+    	</div>
+    	<div class="htcSenseDescription">
+    		<div class="title">Capture life's moments</div>
+    			<p>Take great shots or videos with the 5MP camera and HD camcorder on the HTC Flyer. You won't have any trouble finding your target on the extrasized 7-inch viewfinder.</p>
+    	</div>
+    </div>    
+    </div>
+  </body> 
+</html>

@@ -1,0 +1,75 @@
+body
+{
+	margin:0;
+	padding:0; 
+	font-family:Arial;
+}
+		
+#container
+{
+	position:relative;
+	z-index: 10;
+}
+
+.baseCss {background-color: #FFFFFF;} 
+.displayNone { display: none; }
+
+#sketchpad { background-color:#FFFFFF;}
+
+/********* Drawing **************/
+.topFrame { top: 0px; left: 0px; position: absolute; display: block; width: 766px; height: 39px; background: url(../images/iPad/drawing/topFrame.png) no-repeat; z-index: 11}
+.leftFrame { top: 39px; left: 0px; position: absolute; display: block; width: 36px; height: 862px; background: url(../images/iPad/drawing/leftFrame.png) no-repeat; z-index: 11}
+.rightFrame { top: 39px; left: 726px; position: absolute; display: block; width: 40px; height: 862px; background: url(../images/iPad/drawing/rightFrame.png) no-repeat; z-index: 11}
+.bottomFrame { top: 901px; left: 0px; position: absolute; display: block; width: 766px; height: 43px; background: url(../images/iPad/drawing/bottomFrame.png) no-repeat; z-index: 11}
+
+
+.brushes { top: 784px; left: 604px; position: absolute; display: block; width: 164px; height: 160px; background: url(../images/iPad/drawing/brushes.png) no-repeat; z-index: 12}
+.whiteColor { top: 909px; left: 665px; position: absolute; z-index: 13}
+.redColor { top: 878px; left: 680px; position: absolute; z-index: 13}
+.blueColor { top: 854px; left: 703px; position: absolute; z-index: 13}
+.blackColor { top: 841px; left: 733px; position: absolute; z-index: 13}
+.close { top: 30px; left: 700px; position: absolute; z-index: 13}
+
+.close a { display: block; width: 50px; height: 50px; background: url(../images/iPad/drawing/close_but.png) no-repeat; outline: none;}	
+.blackColor a { display: block; width: 25px; height: 25px; background: url(../images/iPad/drawing/col_black_but.png) no-repeat; outline: none;}	
+.blueColor a { display: block; width: 25px; height: 25px; background: url(../images/iPad/drawing/col_blue_but.png) no-repeat; outline: none;}	
+.redColor a { display: block; width: 25px; height: 25px; background: url(../images/iPad/drawing/col_red_but.png) no-repeat; outline: none;}	
+.whiteColor a { display: block; width: 25px; height: 25px; background: url(../images/iPad/drawing/col_white_but.png) no-repeat; outline: none;}	
+
+.clear { top: 869px; left: 694px; position: absolute; z-index: 13}
+.draw { top: 869px; left: 694px; position: absolute; z-index: 12}
+
+.draw a { display: block; width: 74px; height: 75px; background: url(../images/iPad/drawing/pen.png) no-repeat; outline: none;}	
+.clear a { display: block; width: 74px; height: 75px; background: url(../images/iPad/drawing/clear.png) no-repeat; outline: none;}	
+
+/********* Top Screen **************/
+.senseLogo { top: 10px; left: 580px; position: absolute; display: block; width: 194px; height: 112px; background: url(../images/iPad/logo/htc-sense.png) no-repeat; z-index: 4}
+.logo { top: 0px; left: 0px; position: absolute; display: block; width: 183px; height: 115px; background: url(../images/iPad/logo/htc-logo.png) no-repeat; z-index: 4}
+
+.player { top: 120px; left: 300px; position: absolute; display: block; z-index: 5}
+.scribeTech { top: 120px; left: 300px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/iPad/features/scribeTech.jpg) no-repeat; z-index: 4}
+.noteTaking { top: 120px; left: 300px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/iPad/features/noteTaking.jpg) no-repeat; z-index: 4}
+.streamLined { top: 120px; left: 300px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/iPad/features/streamLined.jpg) no-repeat; z-index: 4}
+
+.title { font-size: 16px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+.description { top: 445px; left: 300px; position: absolute; display: block; width: 450px; height: 150px; background-color:#FFFFFF; opacity: 1; font-size: 14px; font-family: Arial, Helvetica, sans-serif; z-index: 4; }
+
+.hand { top: 120px; left: 0px; position: absolute; display: block; width: 229px; height: 120px; background: url(../images/iPad/icons/hand.png) no-repeat; z-index: 5}
+
+.videoIcon { top: 120px; left: 97px; position: absolute; z-index: 4}
+.scribeIcon { top: 230px; left: 97px; position: absolute; z-index: 4}
+.noteTakingIcon { top: 335px; left: 97px; position: absolute; z-index: 4}
+.streamlinedIcon { top: 440px; left: 97px; position: absolute; z-index: 4}
+
+.videoIcon a { display: block; width: 122px; height: 103px; background: url(../images/iPad/icons/video.png) no-repeat; outline: none;}	
+.scribeIcon a { display: block; width: 122px; height: 103px; background: url(../images/iPad/icons/scribeTech.png) no-repeat; outline: none;}	
+.noteTakingIcon a { display: block; width: 122px; height: 103px; background: url(../images/iPad/icons/noteTaking.png) no-repeat; outline: none;}	
+.streamlinedIcon a { display: block; width: 122px; height: 103px; background: url(../images/iPad/icons/streamlined.png) no-repeat; outline: none;}
+
+.htcSense { top: 620px; left: 30px; width: 720px; position: absolute; display: block; z-index: 4}
+.clickToPlay { top: 619px; left: 250px; position: absolute; display: block; width: 196px; height: 47px; background: url(../images/iPad/icons/clickToPlay.png) no-repeat; z-index: 4}
+
+/********* Bottom Screen **************/
+.htcSenseVideo {top: 20px; left: 30px; position: absolute; display: block; width: 300px; height: 200px;}
+.senseVideo {width: 300px; height: 200px;}
+.htcSenseDescription { top: 15px; left: 380px; position: absolute; display: block; width: 350px; height: 200px; font-size: 14px; font-family: Arial, Helvetica, sans-serif; z-index: 4 }

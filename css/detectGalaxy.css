@@ -1,0 +1,75 @@
+body
+{
+	margin:0;
+	padding:0; 
+	font-family:Arial;
+}
+		
+#container
+{
+	position:absolute;
+	z-index: 10;
+}
+
+.baseCss {background-color: #FFFFFF;} 
+.displayNone { display: none; }
+
+#sketchpad { background-color:#FFFFFF; }
+
+/********* Drawing **************/
+.topFrame { top: 2px; left: 0px; position: fixed; display: block; width: 390px; height: 39px; background: url(../images/galaxy/drawing/topFrame.png) no-repeat; z-index: 11}
+.leftFrame { top: 39px; left: 0px; position: fixed; display: block; width: 36px; height: 590px; background: url(../images/galaxy/drawing/leftFrame.png) no-repeat; z-index: 11}
+.rightFrame { top: 39px; right: 2px; position: fixed; display: block; width: 40px; height: 862px; background: url(../images/galaxy/drawing/rightFrame.png) no-repeat; z-index: 11}
+.bottomFrame { bottom: 0px; left: 0px; position: fixed; display: block; width: 766px; height: 43px; background: url(../images/galaxy/drawing/bottomFrame.png) no-repeat; z-index: 11}
+
+.brushes { bottom: 0px; right: 0px; position: fixed; display: block; width: 164px; height: 160px; background: url(../images/galaxy/drawing/brushes.png) no-repeat; z-index: 12}
+.whiteColor { bottom: 10px; right: 78px; position: fixed; z-index: 13}
+.redColor { bottom: 41px; right: 63px; position: fixed; z-index: 13}
+.blueColor { bottom: 65px; right: 40px; position: fixed; z-index: 13}
+.blackColor { bottom: 78px; right: 10px; position: fixed; z-index: 13}
+.close { top: 30px; right: 20px; position: fixed; z-index: 13}
+
+.close a { display: block; width: 50px; height: 50px; background: url(../images/galaxy/drawing/close_but.png) no-repeat; outline: none;}	
+.blackColor a { display: block; width: 25px; height: 25px; background: url(../images/galaxy/drawing/col_black_but.png) no-repeat; outline: none;}	
+.blueColor a { display: block; width: 25px; height: 25px; background: url(../images/galaxy/drawing/col_blue_but.png) no-repeat; outline: none;}	
+.redColor a { display: block; width: 25px; height: 25px; background: url(../images/galaxy/drawing/col_red_but.png) no-repeat; outline: none;}	
+.whiteColor a { display: block; width: 25px; height: 25px; background: url(../images/galaxy/drawing/col_white_but.png) no-repeat; outline: none;}	
+
+.clear { bottom: 0px; right: 0px; position: fixed; z-index: 13}
+.draw { bottom: 0px; right: 0px; position: fixed; z-index: 12}
+
+.draw a { display: block; width: 74px; height: 75px; background: url(../images/galaxy/drawing/pen.png) no-repeat; outline: none;}	
+.clear a { display: block; width: 74px; height: 75px; background: url(../images/galaxy/drawing/clear.png) no-repeat; outline: none;}	
+
+/********* Top Screen **************/
+.senseLogo { top: 20px; left: 300px; position: absolute; display: block; width: 80px; height: 38px; background: url(../images/galaxy/logo/htc-sense.png) no-repeat; z-index: 4}
+.logo { top: 15px; left: 15px; position: absolute; display: block; width: 62px; height: 39px; background: url(../images/galaxy/logo/htc-logo.jpg) no-repeat; z-index: 4}
+
+.player { position: fixed; display: block;}
+
+.scribeTech { top: 80px; left: 150px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/galaxy/features/scribeTech.jpg) no-repeat; z-index: 4}
+.noteTaking { top: 80px; left: 150px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/galaxy/features/noteTaking.jpg) no-repeat; z-index: 4}
+.streamLined { top: 80px; left: 150px; position: absolute; display: block; width: 337px; height: 286px; opacity: 0; background: url(../images/galaxy/features/streamLined.jpg) no-repeat; z-index: 4}
+
+.title { font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+.description { top: 300px; left: 150px; position: absolute; display: block; width: 240px; height: 150px; background-color:#FFFFFF; opacity: 1; font-size: 10px; font-family: Arial, Helvetica, sans-serif; z-index: 4; }
+
+.hand { top: 80px; left: 0px; position: absolute; display: block; width: 130px; height: 75px; background: url(../images/galaxy/icons/hand.png) no-repeat; z-index: 5}
+
+.videoIcon { top: 77px; left: 45px; position: absolute; z-index: 4}
+.scribeIcon { top: 160px; left: 45px; position: absolute; z-index: 4}
+.noteTakingIcon { top: 243px; left: 45px; position: absolute; z-index: 4}
+.streamlinedIcon { top: 326px; left: 45px; position: absolute; z-index: 4}
+
+.videoIcon a { display: block; width: 80px; height: 68px; background: url(../images/galaxy/icons/video.png) no-repeat; outline: none;}	
+.scribeIcon a { display: block; width: 80px; height: 68px; background: url(../images/galaxy/icons/scribeTech.png) no-repeat; outline: none;}	
+.noteTakingIcon a { display: block; width: 80px; height: 68px; background: url(../images/galaxy/icons/noteTaking.png) no-repeat; outline: none;}	
+.streamlinedIcon a { display: block; width: 80px; height: 68px; background: url(../images/galaxy/icons/streamlined.png) no-repeat; outline: none;}
+
+.htcSense { top: 450px; left: 30px; width: 720px; position: absolute; display: block; z-index: 4}
+.clickToPlay { top: 448px; left: 150px; position: absolute; display: block; width: 167px; height: 40px; background: url(../images/galaxy/icons/clickToPlay.png) no-repeat; z-index: 4}
+
+/********* Bottom Screen **************/
+.htcSenseVideo {top: 0px; left: 30px; position: absolute; display: block; }
+.senseVideo {width: 100px; height: 100px;}
+.htcSenseDescription { top: 7px; left: 170px; position: absolute; display: block; width: 165px; height: 250px; font-size: 10px; font-family: Arial, Helvetica, sans-serif; z-index: 4 }
